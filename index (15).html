@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Francia - Presentación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #002395, #ED2939);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                flex-direction: row;
+                align-items: center;
+            }
+            section:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .text-content h2 {
+            color: #002395;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #ED2939;
+            padding-bottom: 0.4rem;
+            display: inline-block;
+        }
+
+        .text-content p {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .image-content img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #222;
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #ED2939;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historia de Francia</h1>
+        <p>Un recorrido por los momentos más importantes de la nación francesa</p>
+    </header>
+
+    <div class="container">
+        <!-- Sección 1 -->
+        <section>
+            <div class="text-content">
+                <h2>1. La Galia y el Imperio Romano</h2>
+                <p>
+                    Antes de convertirse en Francia, el territorio era conocido como Galia. 
+                    Los pueblos celtas habitaban la región hasta que Julio César la conquistó 
+                    entre el 58 y el 50 a.C. Durante siglos formó parte del Imperio Romano, 
+                    adoptando la lengua latina (base del francés actual), el derecho romano 
+                    y el cristianismo. Ciudades como Lutetia (actual París) y Lugdunum (Lyon) 
+                    se convirtieron en importantes centros urbanos.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="images/historia1.jpg" alt="Mapa de la Galia romana">
+            </div>
+        </section>
+
+        <!-- Sección 2 -->
+        <section>
+            <div class="text-content">
+                <h2>2. La Edad Media y el Reino de Francia</h2>
+                <p>
+                    Tras la caída del Imperio Romano, los francos (pueblo germánico) se 
+                    establecieron en la región. Clodoveo I unificó gran parte del territorio 
+                    y se convirtió al cristianismo. En el año 800, Carlomagno fue coronado 
+                    emperador. Durante la Edad Media surgieron las dinastías Capetos, 
+                    Valois y Borbón. La Guerra de los Cien Años (1337-1453) contra Inglaterra 
+                    y la figura de Juana de Arco marcaron profundamente la identidad francesa.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="images/historia2.jpg" alt="Castillo medieval francés">
+            </div>
+        </section>
+
+        <!-- Sección 3 -->
+        <section>
+            <div class="text-content">
+                <h2>3. La Revolución Francesa y la Edad Contemporánea</h2>
+                <p>
+                    En 1789 estalló la Revolución Francesa, que derrocó la monarquía absoluta 
+                    y proclamó los principios de "Liberté, Égalité, Fraternité". Napoleón 
+                    Bonaparte expandió el imperio por Europa y difundió el Código Civil. 
+                    Los siglos XIX y XX trajeron la industrialización, las dos guerras 
+                    mundiales y la construcción de la Quinta República (1958). Hoy Francia 
+                    es una potencia europea y miembro fundador de la Unión Europea.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="images/historia3.jpg" alt="Revolución Francesa - Toma de la Bastilla">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Presentación creada para GitHub Pages · Historia de Francia</p>
+        <p>Imágenes: coloca tus archivos en la carpeta <code>images/</code></p>
+    </footer>
+</body>
+</html>
